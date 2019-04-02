@@ -1,3 +1,5 @@
+//USED TO CONVERY GIVEN INFIX EQUATION TO POSTFIX
+//THE POSTFIX EQUATION WILL BE EVALUATED IN CLASS Evaluate.java
 class Convert
 {
    private Stack theStack;
