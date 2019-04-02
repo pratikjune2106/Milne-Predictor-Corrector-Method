@@ -1,3 +1,4 @@
+//USED TO EVALUTE THE POSTFIX EQUATION TO FIND VALUES OF y'
 class Stack1
 {
    private double[] a;
@@ -19,7 +20,7 @@ class Stack1
 }
 class Evaluate
 {
-   public double calculate(String s,double x,double y)
+   public double calculate(String s,double x,double y)   //accepts values of x & y that need to be susbstituted in the equation
    {
      int n;
      double r=0;
@@ -30,9 +31,9 @@ class Evaluate
        char ch=s.charAt(i);
        if(ch>='0'&&ch<='9')
          a.push((int)(ch-'0'));
-       else if(ch==(int)'x')
+       else if(ch==(int)'x')     //used to replace the variable x with value of x
     	 a.push(x);
-       else if(ch==(int)'y')
+       else if(ch==(int)'y')     //used to replace the variable y with value of y
     	 a.push(y);
        else
        {
